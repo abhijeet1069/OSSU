@@ -11,8 +11,10 @@
 # [aeiou]  Matches a single character in the listed set
 # [^XYZ]   Matches a single character not in the listed set
 # [a-z0-9] The set of characters can include a range
-# (        Indicates where string extraction is to start
-# )        Indicates where string extraction is to end
+# ()       Any subpattern inside a pair of parentheses will be captured as a group
+# ?        Represents optionality
+# \d       digits
+# \b       matches boundary between a word and a non-word character
 
 import re
 
