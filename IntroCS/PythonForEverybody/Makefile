@@ -14,3 +14,9 @@ test:src/test.py
 
 network:src/network/socket1.py
 	python3 src/network/socket1.py
+
+scrape:src/network/scrape.py
+	python3 src/network/scrape.py
+
+exercise:src/network/bsExercise2.py
+	python3 src/network/bsExercise2.py
