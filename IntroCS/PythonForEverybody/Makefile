@@ -20,3 +20,6 @@ scrape:src/network/scrape.py
 
 exercise:src/network/bsExercise2.py
 	python3 src/network/bsExercise2.py
+
+web:src/web-services/xmlLoop.py
+	python3 src/web-services/xmlLoop.py
