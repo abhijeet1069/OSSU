@@ -13,5 +13,10 @@ Using HTTP to send/receive organised data
         Standard Generalized Markup Language(SGML)
         XSD (Most used from W3C)
 
-# XSD structure
+# JSON
+    JSON represents data as nested lists and dictionaries.
+    Python lists, dictionaries were the inspiration for JavaScript. Which then was the inspiration for JSON. 
+
+# API
+
 

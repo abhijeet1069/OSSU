@@ -18,8 +18,8 @@ network:src/network/socket1.py
 scrape:src/network/scrape.py
 	python3 src/network/scrape.py
 
-exercise:src/network/bsExercise2.py
-	python3 src/network/bsExercise2.py
+exercise:src/web-services/exercise-json.py
+	python3 src/web-services/exercise-json.py
 
-web:src/web-services/xmlLoop.py
-	python3 src/web-services/xmlLoop.py
+web:src/web-services/json2.py
+	python3 src/web-services/json2.py
