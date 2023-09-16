@@ -1,8 +1,3 @@
-# Algorithms
-# 	A set of rules or steps used to solve a problem
-# Data Structures:
-#	A paticular way of organizing data in a computer
-
 search:src/searchInFile.py
 	python3 src/searchInFile.py
 
@@ -18,8 +13,11 @@ network:src/network/socket1.py
 scrape:src/network/scrape.py
 	python3 src/network/scrape.py
 
-exercise:src/web-services/exercise-json.py
-	python3 src/web-services/exercise-json.py
+exercise:src/web-services/exercise-json-api.py
+	python3 src/web-services/exercise-json-api.py
 
 web:src/web-services/json2.py
 	python3 src/web-services/json2.py
+
+oops:src/oop/inheritance.py
+	python3 src/oop/inheritance.py
