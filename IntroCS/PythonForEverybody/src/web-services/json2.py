@@ -1,5 +1,9 @@
 import json
 
+# Output:
+# Name Chuck
+# Phone Number: +1 734 303 4456
+
 data = '''{
   "name" : "Chuck",
   "phone" : {

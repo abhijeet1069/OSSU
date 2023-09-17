@@ -7,8 +7,8 @@ regex:src/regex.py
 test:src/test.py
 	python3 src/test.py
 
-network:src/network/socket1.py
-	python3 src/network/socket1.py
+network:src/network/urlLibUrl.py
+	python3 src/network/urlLibUrl.py
 
 scrape:src/network/scrape.py
 	python3 src/network/scrape.py

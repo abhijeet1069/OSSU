@@ -1,6 +1,14 @@
-
-
 import json
+
+# User count: 2
+# Item {'id': '001', 'x': '2', 'name': 'Chuck'}
+# Name Chuck
+# Id 001
+# Attribute 2
+# Item {'id': '009', 'x': '7', 'name': 'Brent'}
+# Name Brent
+# Id 009
+# Attribute 7
 
 data = '''
 [
