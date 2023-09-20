@@ -21,3 +21,6 @@ web:src/web-services/json2.py
 
 oops:src/oop/inheritance.py
 	python3 src/oop/inheritance.py
+
+db:src/db/select.py
+	python3 src/db/select.py
