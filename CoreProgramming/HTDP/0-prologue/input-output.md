@@ -7,6 +7,15 @@
 > (fn 11 212)
 2332
 
+# cond expression
+Cond expression if else-if else statement.
+(define (sign x)
+  (cond
+  [(> x 0) 1]
+  [(= x 0) 0]
+  [(< x 0) -1]))
+
+
 # Landing of rocket: places image of rocket in an empty scene with height as variable
 (require 2htdp/image)
 
