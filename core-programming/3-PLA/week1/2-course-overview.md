@@ -1,3 +1,7 @@
+# My Experience
+- The course has a peer reviewed system, where a solution you submit will be reviewed by your peers.
+- In between of videos, question may pop up like YouTube does with Ads.
+
 Approximate List of Specific Course Topics
 
 Part A:
