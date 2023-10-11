@@ -1,5 +1,5 @@
 (* Programming Languages, Dan Grossman *)
-(* Section 1: Pairs and Tuples *)
+(* Section 1: Pairs - 2 values and Tuples - More than 2 values *)
 
 (* pairs *)
 
@@ -22,7 +22,7 @@ fun sort_pair (pr : int*int) =
 
 val x1 = (7,(true,9)) (* int * (bool*int) *)
 
-val x2 = #1 (#2 x1)  (* bool *)
+val x2 = #1 (#2 x1)  (* bool  - #2 of x1 is (true,9) and its #1 is true*)
 
 val x3 = (#2 x1)      (* bool*int *)
 

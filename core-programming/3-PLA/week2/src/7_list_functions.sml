@@ -1,7 +1,23 @@
 (* Programming Languages, Dan Grossman *)
-(* Section 1: List Functions *)
+(* Lists have same type of values. Similar to arrays
 
-(* Functions taking or producing lists *)
+Appending in list:
+    > val x = [2,3,4]
+    > 2::x
+    [2,2,3,4]
+
+    > [6]::[[7,5],[6]];
+    val it = [[6],[7,5],[6]] : int list list
+    > [6]::[2,3];
+     Error: operator and operand do not agree
+
+Traversal in list:
+    If arr = [v1,v2,v3,v4]
+    null arr = true iff arr is []
+    hd arr = v1
+    tl arr = [v2,v3,v4]
+
+*) 
 
 fun sum_list (xs : int list) =
     if null xs

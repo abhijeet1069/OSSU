@@ -5,11 +5,8 @@ Variable binding - The association between a variable name(identifier) and its v
 
 (* Execute : sml 1-first.sml *)
 (* Once SML programs are leaded we can perform calculations over it, like python in IDLE *)
-(* val is a keyword
-   x is a variable name
-   = is used as a keyword here (has different meaning in expressions)
-   34 is a very simple expression (and value)
-   ; is used as a keyword here (has different meaning in expressions)
+(* A value is an expression that, has no more computation to do," For ex:
+  17 is a value, but 8+9 is not. All values are expressions. Not all expressions are values.
  *)
 val x = 34;
 (* static environment: x-->int *)

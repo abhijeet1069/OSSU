@@ -15,30 +15,32 @@ Whenever writing an expression, keep in mind the the SYNTAX and SEMANTICS:
  *)
 
  (* For ex: 
-    1) Addition expression:
-    Syntax:
-        e1 + e2 where e1 and e2 are expressions
-    Type-checking
-        If e1 and e2 have type int, then e1+e2 has type int
-    Evaluation
-        If e1 evaluates to v1 and e2 evaluates to v2,
-        then e1+e2 evaluates to sum of v1 and v2
+Addition:
+    - Syntax: e1+e2 where e1 and e2 are expressions
+    - Type-checking: type int but only if e1 and e2 have type int in the same static environment, else
+                    does not type-check
+    - Evaluation: evaluate e1 to v1 and e2 to v2 in the same dynamic environment and then produce
+                    the sum of v1 and v2
+  
+Variables:
+    - Syntax: a sequence of letters, underscores, etc.
+    - Type-checking: look up the variable in the current static environment and use that type
+    - Evaluation: look up the variable in the current dynamic environment and use that value
+  
+Conditionals:
+    - Syntax: if e1 then e2 else e3 where e1, e2, and e3 are expressions
+    - Type-checking: using the current static environment, a conditional type-checks only if (a) e1 has
+                     type bool and (b) e2 and e3 have the same type. The type of the whole expression is the type of
+                     e2 and e3.
+    - Evaluation: under the current dynamic environment, evaluate e1. If the result is true, the result
+                    of evaluating e2 under the current dynamic environment is the overall result. If the result is
+                    false, the result of evaluating e3 under the current dynamic environment is the overall result.
 
-    All values are expressions.
-    Not all expressions are values.
-
-    2) Conditional expression:
-    Syntax:
-        if e1 then e2 else e3
-        where if, then, and else are keywords and e1, e2, e3 are sub-expressions
-    Type-checking:
-        first e1 must have type bool
-        e2 and e3 can have any type, but they must have the same type t
-        the type of the entire expression is also type t
-    Evaluation rules:
-        first evaluate e1 to a value call it v1
-        if it's true, evaluate e2 and that result is the whole expression's result
-        else, evaluate e3 anf that result is the whole expression's result
+Boolean constants:
+    - Syntax: either true or false
+    - Type-checking: type bool in any static environment
+    - Evaluation: to itself in any dynamic environment (it is a value)
+ 
   *)
 
 val x = 34
