@@ -33,7 +33,7 @@
 
 <div th:replace="fragments/topnav :: navbar">
 </div>
-
+<h1>Saved!</h1>
 <br/>
 Your specimen is: <p th:text="${specimenDTO}"/>
 
@@ -68,6 +68,6 @@ Your specimen is: <p th:text="${specimenDTO}"/>
 	<input type="file" name="imageFile">
 	<input type="submit" value="Upload"/>
 </form>
-
+<img th:src="@{${'/photos/' + photoDTO.fileName}}" alt="Photo upload confirmation"/>
 </body>
 </html>

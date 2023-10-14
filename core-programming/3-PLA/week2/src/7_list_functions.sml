@@ -54,3 +54,13 @@ fun seconds (xs : (int * int) list) =
 fun sum_pair_list2 (xs : (int * int) list) =
     (sum_list (firsts xs)) + (sum_list (seconds xs))
 
+(* SML has a quirky statement end syntax too*)
+fun separate_odd(arr: int list) =
+    if null arr
+    then []
+    else
+        let val temp = hd(arr)
+        in if temp mod 2 <> 0
+            then temp :: separate_odd(tl(arr))
+            else separate_odd(tl(arr))
+        end
