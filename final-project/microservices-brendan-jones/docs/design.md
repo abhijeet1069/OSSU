@@ -15,4 +15,14 @@ Controller - a class to map endpoint
     @RequestMapping : Maps to API endpoint
     @RequestParam : Access URL parameters
 
+# HTTP Methods
+POST - Create new resources (files in a directory, images in a gallery)
+GET - Retrieve information only. No modification.
+PUT - Update existing resource
+DELETE - Delete resources
+PATCH - Make a partial update on an existing resource
+HEAD
+OPTIONS
+TRACE
+
 
