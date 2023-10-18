@@ -24,4 +24,6 @@ Decomposition is taking a whole thing a whole thing and dividing it up into diff
 
 ## Generalisation
 
-Don't Repeat Yourself (D.R.Y)
+Don't Repeat Yourself (D.R.Y).
+
+![Javatpoint](https://media-exp1.licdn.com/dms/image/C4D0BAQEwg5FK93uumQ/company-logo_200_200/0/1519923012279?e=2147483647&v=beta&t=63CNoS8OTR4lHjPhHSO7eFFqwLGwYunWfyDBV3tdc0c)  

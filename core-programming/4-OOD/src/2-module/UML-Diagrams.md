@@ -14,6 +14,6 @@ Access Modifier
 
 There are three types of relationships found in decompostion:
     Association
+        Association is some relationship
     Aggregation
     Composition
-    
