@@ -26,4 +26,5 @@ Decomposition is taking a whole thing a whole thing and dividing it up into diff
 
 Don't Repeat Yourself (D.R.Y).
 
-![Text Image ](../../res/2-module/food-uml-class.png)
+![Food CRC to UML ](../../res/2-module/food-crc-to-uml.png )
+![Food UML class ](../../res/2-module/food-uml-class.png )

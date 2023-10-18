@@ -1,9 +1,9 @@
 # All Courses
 
-* Object Oriented Design
-* Design Patterns
-* Software Architecture
-* Service Oriented Architecture
+- [x] Object Oriented Design
+- [] Design Patterns
+- [] Software Architecture
+- [] Service Oriented Architecture
 
 ## Software Design and Architecture
 
@@ -31,6 +31,9 @@ C - Collaborator
 
 CRC cards for bank machine - CRC-Bank.png
 Once the requirement increases, we should add or remove CRC cards. Like authentication, network...
+
+![CRC card archetype ](../../res/1-module/CRC-card.png)
+![Sample Bank ATM CRC ](../../res/1-module/CRC-Bank.png)
 
 ### Technical Requirement
 
