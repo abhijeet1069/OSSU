@@ -1,14 +1,24 @@
 # UML class diagrams
 
-ClassName
-Properties or Attributes
-Operations or Methods
+Class - A class symbolize a concept which encapsulates state(attributes) and behavior(operations).
+Class in UML is represented by
+    a) Class name
+    b) Class Attributes
+    c) Class Operations
 
 ## Implementing Encapsulation
 
 Access Modifier
     + : public
     - : private
+    # : protected
+    ~ : package
+    / : derived
+   underlined : static
+
+## Multiplicity
+    
+    1 --- 0..* left side 1 class is associated with 0 or more classes on right
 
 ## Implementing Decomposition
 
