@@ -2,23 +2,25 @@
 
 Class - A class symbolize a concept which encapsulates state(attributes) and behavior(operations).
 Class in UML is represented by
-    a) Class name
-    b) Class Attributes
-    c) Class Operations
+
+* Class name
+* Class Attributes
+* Class Operations
 
 ## Implementing Encapsulation
 
 Access Modifier
-    + : public
-    - : private
-    # : protected
-    ~ : package
-    / : derived
-   underlined : static
+
+* '+'  public
+* '-'  private
+* '#'  protected
+* '~'  package
+* '/'  derived
+* 'underlined' static
 
 ## Multiplicity
-    
-    1 --- 0..* left side 1 class is associated with 0 or more classes on right
+
+1 --- 0..* left side 1 class is associated with 0 or more classes on right
 
 ## Implementing Decomposition
 
@@ -127,8 +129,8 @@ public abstract class Animal{
         this.numberOfLegs = legs;
     }
 }
-
 ```
+
 Java does not allow multiple inheritance, as it can result in data abiguity.
 
 ### Generalization using Interfaces
@@ -167,4 +169,5 @@ public interface IVehicleMovement3D extends IVehicleMovement{
     public void moveOnZ();
 }
 ```
+
 ![class and interface ](../../res/2-module/class&interface.png )
