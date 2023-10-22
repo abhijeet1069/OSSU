@@ -32,8 +32,8 @@ C - Collaborator
 CRC cards for bank machine - CRC-Bank.png
 Once the requirement increases, we should add or remove CRC cards. Like authentication, network...
 
-![CRC card archetype ](../../res/1-module/CRC-card.png)
-![Sample Bank ATM CRC ](../../res/1-module/CRC-Bank.png)
+![CRC card archetype ](../../res/week-1/CRC-card.png)
+![Sample Bank ATM CRC ](../../res/week-1/CRC-Bank.png)
 
 ### Technical Requirement
 
