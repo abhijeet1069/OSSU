@@ -3,7 +3,7 @@
 - [x] Object Oriented Design
 - [] Design Patterns
 - [] Software Architecture
-- [] Service Oriented Architecture
+- [] Service Oriented Architecture //next
 
 ## Software Design and Architecture
 
