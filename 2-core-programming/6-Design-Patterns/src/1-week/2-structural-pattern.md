@@ -55,6 +55,83 @@ public class BankService{
 }
 
 //client class
-public class 
+public class Customer{
+    public static void main(String[] args){
+        BankService myBankService = new BankService();
+
+        int mySaving = myBankService.createNewAccount("saving",new BigDecimal(500.00));
+        int myInvestment = myBankService.createNewAccount("investment", new BigDecimal(1000.00));
+
+        myBankService.transferMoney(mySaving, myInvestment, new BigDecimal(300));
+
+    }
+}
+
+```
+
+## Adapter Pattern
+
+```java
+
+//target interface
+public interface IWebRequester{
+    public int request(Object);
+}
+
+//adapter class
+public class WebAdapter implements IWebRequester{
+    private WebService service;
+
+    public void connect(WebService currentService){
+        this.service = currentService;
+    }
+
+    public int request(Object request){
+        Json result = this.toJson(request);
+        Json response = service.request(result);
+        if(response != null){
+            return 200;
+        }
+        return 500;
+    }
+
+    private Json toJson(Object input) { ... }
+}
+
+// PS2 male
+public class WebClient{
+    private IWebRequester webRequester;
+
+    public WebClient(IWebRequester webRequester){
+        this.webRequester = webRequester;
+    }
+
+    private Object makeObject(){ ... }
+
+    public void doWork(){
+        Object object = makeObject();
+        int status = webRequester.request(object);
+
+        if(status == 200){
+            System.out.println("OK");
+        }
+        else{
+            System.out.println("Not OK");
+        }
+        return;
+    }
+}
+
+//main program
+public class Program{
+    public static void main(String[] args){
+        String webHost = "https://google.com";
+        WebService service = new WebService(webHost); //WebService is USB female
+        WebAdapter adapter = new WebAdapter();
+        adapter.connect(service);
+        WebClient client = new WebClient(adapter);
+        client.doWork();
+    }
+}
 
 ```
