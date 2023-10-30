@@ -2,32 +2,29 @@
 
 ## Singleton Pattern
 
-* Enforces one and only one object of a Singleton class.
-* Has a singleton object globally accessible.
+The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
 
 ```java
-public class ExampleSingleton{
-    
-    private static ExampleSingleton uniqueInstance = null;
 
-    private ExampleSingleton(){
-        ...
-    }
+public class SingleTon {
+    private static SingleTon obj = null;
 
-    public static ExampleSingleton getInstance(){
-        if(uniqueInstance == null){
-            uniqueInstance = new ExampleSingleton();
-        }
-        return uniqueInstance;
-    }
-    ...
+    protected SingleTon() {}
+ 
+    public static SingleTon getInstance() {
+     if(obj == null) {
+      obj = new SingleTon();
+  }
+  return obj;
+ }
 }
+
 ```
 
 ## Factory Method Pattern
 
-The Factory Method design intent is to define an interface for creating objects, but let the subclasses decide
-which class to instantiate. (Coding to an interface not an implmentation)
+Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows
+subclasses to alter the type of objects that will be created.
 
 ```java
 public abstract class KnifeStore{ //can't create objects of abstract class
