@@ -1,0 +1,17 @@
+[main 7807177] new commit
+ 14 files changed, 181 insertions(+)
+ create mode 100644 2-core-programming/7-Software-Architecture/src/1-week/overview.md
+ create mode 100644 3-core-systems/1-OS/1-lec/Makefile
+ create mode 100755 3-core-systems/1-OS/1-lec/bin/cpu
+ create mode 100755 3-core-systems/1-OS/1-lec/bin/io
+ create mode 100755 3-core-systems/1-OS/1-lec/bin/mem
+ create mode 100755 3-core-systems/1-OS/1-lec/bin/threads
+ create mode 100644 3-core-systems/1-OS/1-lec/res/content.pdf
+ create mode 100644 3-core-systems/1-OS/1-lec/src/common.h
+ create mode 100644 3-core-systems/1-OS/1-lec/src/common_threads.h
+ create mode 100644 3-core-systems/1-OS/1-lec/src/cpu.c
+ create mode 100644 3-core-systems/1-OS/1-lec/src/io.c
+ create mode 100644 3-core-systems/1-OS/1-lec/src/mem.c
+ create mode 100644 3-core-systems/1-OS/1-lec/src/threads.c
+ create mode 160000 3-core-systems/1-OS/ostep-code
+Thu Nov  2 21:02:17 IST 2023
