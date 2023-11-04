@@ -28,16 +28,19 @@ Mechanisms : How things work
 
 OS is the first program to run.
 
-What if a user process wants to do something restricted?
-What if OS wants to stop "A" and run "B"?
-What if "A" does something that is slow (disk, network I/O)?
+## What if a user process wants to do something restricted?
 
-Mode : CPU bit
-    OS : kernel mode (can do anything on system)
-    User Program : user mode (can do limited number of things)
-                trap - hardware instruction to switch from user to restricted kernel mode
-                return from trap
+We use what is called trap, its a hardware instruction to switch from user to restricted kernel mode and back
+OS : kernel mode (can do anything on system)
+User Program : user mode (can do limited number of things)
 
-Process -- trap --> OS -- return from trap -->
-        (system calls)
+Process -- trap -->  Kernel Mode --> return from trap --> User mode
+                (system calls)
 
+## What if OS wants to stop "A" and run "B"?
+
+Time interrupt is a hardware support.
+When OS boots:
+    It boots in kernel mode.
+    Installs trap handlers.
+    Start interrupt timer.
