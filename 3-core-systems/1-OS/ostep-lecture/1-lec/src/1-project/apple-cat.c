@@ -1,33 +1,23 @@
 /*-
- * Copyright (c) 1989, 1993
- *	The Regents of the University of California.  All rights reserved.
- *
- * This code is derived from software contributed to Berkeley by
- * Kevin Fall.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 4. Neither the name of the University nor the names of its contributors
- *    may be used to endorse or promote products derived from this software
- *    without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
- * SUCH DAMAGE.
+Output:
+
+satyam@satyam-2 bin %  ./my-cat ../res/witch.txt
+Macbeth
+
+“Double, double toil and trouble;
+Fire burn, and cauldron bubble.” 
+
+"By the pricking of my thumbs,
+Something wicked this way comes."
+
+"If you can look into the seeds of time,
+And say which grain will grow and which will not."
+
+
+
+"Come what come may,
+Time and the hour runs through the roughest day.”
+satyam@satyam-2 bin % 
  */
 
 #if 0
@@ -137,7 +127,7 @@ scanfiles(char *argv[], int cooked)
 	char *path;
 	FILE *fp;
 
-	while ((path = argv[i]) != NULL || i == 0) {
+	while ((path = argv[i]) != NULL || i == 0) { //execute the loop even if argv is empty
 		int fd;
 
 		if (path == NULL || strcmp(path, "-") == 0) {
@@ -241,13 +231,34 @@ raw_cat(int rfd)
 	ssize_t nr, nw;
 	static size_t bsize;
 	static char *buf = NULL;
+
+/**
+
+struct stat {
+    dev_t     st_dev;         //ID of device containing file 
+    ino_t     st_ino;         // Inode number 
+    mode_t    st_mode;        // File type and mode 
+    nlink_t   st_nlink;       // Number of hard links
+    uid_t     st_uid;         // User ID of owner 
+    gid_t     st_gid;         // Group ID of owner 
+    dev_t     st_rdev;        // Device ID (if special file)
+    off_t     st_size;        // Total size, in bytes
+    blksize_t st_blksize;     // Block size for file system I/O 
+    blkcnt_t  st_blocks;      // Number of 512B blocks allocated
+    time_t    st_atime;       // Last access time 
+    time_t    st_mtime;       // Last modification time
+    time_t    st_ctime;       // Last status change time
+};
+
+**/
 	struct stat sbuf;
 
-	wfd = fileno(stdout);
+	wfd = fileno(stdout); //write data to standard output
+	
 	if (buf == NULL) {
 		if (fstat(wfd, &sbuf))
 			err(1, "%s", filename);
-		bsize = MAX(sbuf.st_blksize, 1024);
+		bsize = MAX(sbuf.st_blksize, 1024); //select buffer size. min 1024 bytes
 		if ((buf = malloc(bsize)) == NULL)
 			err(1, "buffer");
 	}

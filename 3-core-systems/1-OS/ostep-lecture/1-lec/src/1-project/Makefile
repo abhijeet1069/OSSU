@@ -1,6 +1,6 @@
 APP_NAME = my-cat
 BUILD_DIR = ../../bin
-C_FILES = ./apple-cat.c
+C_FILES = ./my-cat.c
 C_FLAGS = -Wall -Werror
 
 all: build run
