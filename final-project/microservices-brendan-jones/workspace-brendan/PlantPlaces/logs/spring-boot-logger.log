@@ -1,3 +1,0 @@
-2023-10-15 18:46:20,117 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on satyam-2.local with PID 31317 (/Users/satyam/Personal/OSSU/final-project/microservices-brendan-jones/workspace-brendan/plantplaces/target/classes started by satyam in /Users/satyam/Personal/OSSU/final-project/microservices-brendan-jones/workspace-brendan/plantplaces)
-2023-10-15 18:46:20,122 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-2023-10-15 18:46:20,125 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
