@@ -10,6 +10,7 @@ jd
 satyam@satyam-2 1-lecture % echo $PATH
 /usr/local/smlnj/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/satyam/Library/Java/JavaVirtualMachines/openjdk-18.0.2.1/Contents/Home/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/usr/local/smlnj/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin
 
+# print location from environment path
 satyam@satyam-2 1-lecture % which java
 /usr/bin/java
 
