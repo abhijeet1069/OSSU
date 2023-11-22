@@ -92,7 +92,7 @@ index fdff486..3b5198c 100644
 
 ## Git Branches
 
-Can do multiple branches of development using this.
+Its the killer feature of GIT, and sets it apart from other VCS.
 
 ```zsh
 git add animal.py
@@ -152,4 +152,43 @@ satyam@satyam-2 playground % git log --all --graph --decorate --oneline
 |/  
 * 2e13dd9 animal.py created
 * ad14ebf (origin/main) new commit
+```
+
+## GIT status
+
+-s : short
+
+```zsh
+git status -s
+```
+
+D - Deleted
+M - modified
+?? - untracked
+
+## Undo commit changes
+
+commit is like saving data onto git database.
+
+```zsh
+git commit --amend -m "changes reverted"
+```
+
+## Tagging
+
+Used to mark release points v1.0, v2.0
+
+## Git log
+
+```zsh
+git log --pretty=oneline
+```
+
+## Git Aliases
+
+```zsh
+git config --global alias.unstage 'reset HEAD --'
+
+git unstage fileA
+git reset HEAD -- fileA
 ```
