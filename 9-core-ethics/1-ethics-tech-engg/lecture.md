@@ -1,6 +1,6 @@
-Core Ethics
+# Core Ethics
 
-KIVI Code of conduct:
+## KIVI Code of conduct
 
 When we make technical decisions, we take the safety and the health of humans and the environment into account. 
 Furthermore, we report the factors that affect the safety of society and the environment.
@@ -9,5 +9,5 @@ John Stuart Mill (1859) has formulated the freedom principle: "everyone is free 
 
 Cases where engineering/medical fields can get horribly wrong:
 
-A) Drug testing on third world countries like Indian patients
-B) American 
+a) Drug testing on third world countries like Indian patients
+b) American
