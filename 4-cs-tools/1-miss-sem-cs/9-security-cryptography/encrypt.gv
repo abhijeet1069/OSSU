@@ -1,0 +1,14 @@
+digraph diagram1 {
+    pp[label="passphrase"]
+    plain[label="plaintext"]
+    cipher[label="cipher-text"]
+    kdf[label="KDF",shape="box"]
+    encrypt[label="encrypt",shape="box"]
+    key[label="key"]
+
+    pp->kdf
+    kdf->key
+    plain->encrypt
+    key->encrypt
+    encrypt->cipher
+}
