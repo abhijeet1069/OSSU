@@ -96,7 +96,7 @@ htop - Live resource monitoring
 
 ## Call Graph
 
-Its better to create you own dotfiles
+Its better to create you own dotfiles. Which function called which function
 
 GraphViz - Render dotfiles
 
@@ -104,3 +104,20 @@ GraphViz - Render dotfiles
 dot -Tpng basic.gv -o new.png
 
 ```
+
+## Flame Graph
+
+Sampling profiler
+
+stress - stress test cpu
+
+cachegrind - tracing profiler
+
+lsof - list of open files
+Find which process is using which file or which port.
+
+## Benchmarking
+
+Check which program is faster and you should use
+
+hyperfine --warmup 3 'fd -e jpg' 'find . -iname "*.jpg"'
