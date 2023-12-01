@@ -8,4 +8,3 @@ like debugging, tools, profiling. Something that many CS courses don't pay atten
 1. Make - Great tool for automating shell commands.
 2. Dot files - Great way to draw graphs, UML and other structures very much needed in CSE.
 3. Hammerspoon - Great tool to automate MacOS.
-

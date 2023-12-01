@@ -1,6 +1,10 @@
 # Drawing Graphs with DOT
 
-dot draws graphs. It supports format such as GIF, PNG, SVG and PDF.
+```zsh
+dot -Tpng basic.gv -o new.png
+```
+
+dot and gv file formats are OK. But gv is preferred.
 
 dot accepts input in DOT language. The language describes three main kinds of objects.
 
@@ -106,25 +110,25 @@ A cluster is a subgraph placed in its own distinct rectangle of the layout.
 
 ## Applications
 
-1. Simple Graph
+### Simple Graph
 
-```code json
- 
+```dot
+
 digraph G {
-	main_main [label="Main.main()"]
-	main_osa [label="Main.onStartApplication()"]
-	asl_la2 [label="ApplicationStartLoader.loadApplication2()"]
-	asl_la1 [label="ApplicationStartLoader.loadApplication1()"]
+main_main [label="Main.main()"]
+main_osa [label="Main.onStartApplication()"]
+asl_la2 [label="ApplicationStartLoader.loadApplication2()"]
+asl_la1 [label="ApplicationStartLoader.loadApplication1()"]
 
-	main_main -> main_osa
-	main_osa -> asl_la2
-	asl_la2 -> asl_la1
+main_main -> main_osa
+main_osa -> asl_la2
+asl_la2 -> asl_la1
 
 }
 
 ```
 
-2. Simple UML diagram
+### Simple UML diagram
 
 ```code
 digraph g{
@@ -136,7 +140,7 @@ digraph g{
 }
 ```
 
-2. Binary Search Tree
+### Binary Search Tree
 
 ```code
 
@@ -156,7 +160,7 @@ digraph bst {
 
 ```
 
-3. Subgraphs
+### Subgraphs
 
 ```code
 
