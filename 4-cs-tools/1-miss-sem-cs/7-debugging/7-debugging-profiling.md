@@ -40,19 +40,34 @@ foobar.py:11:6: E0602: Undefined variable 'baz' (undefined-variable)
 Your code has been rated at 0.00/10
 ```
 
-## Profilers
+## Profiling
 
 Profiling is how you optimise how much resources your code uses.
 Basic CPU profiling can be done using time command. However, its like a blackbox.
 For much detail CPU profiling we use line profilers.
 
+### Timing
+
+real - time from start to finish of the program, including the time taken by other processes and time taken while blocked (e.g. waiting for I/O or network)
+user - amount of time spent in the CPU running user code
+sys - amount of time spent in the CPU running kernel code
+
+```zsh
+$ % time curl https://www.google.com &> /dev/null
+$ curl https://www.google.com &> /dev/null  
+0.02s user 
+0.01s system 
+4% cpu 
+0.735 total
+```
+
 ### Line Profilers
 
 Calculate how much CPU each line takes
-
-```zsh
+Here, actual time has gone into making web-request. 99% of program time.
 $ kernprof -l -v a.py
 
+```zsh
 Wrote profile results to a.py.lprof
 Timer unit: 1e-06 s
 
@@ -70,10 +85,11 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
     11        46        223.0      4.8      0.0      for url in s.find_all('a'):
     12        45         14.0      0.3      0.0          urls.append(url['href'])
 
-satyam@satyam-2 src % 
 ```
 
 ### Memory Profilers
+
+Tools like valgrind are also used.
 
 ```zsh
 $ python3 -m memory_profiler mem.py
@@ -90,7 +106,7 @@ Line #    Mem usage    Increment  Occurrences   Line Contents
  
 ```
 
-### Resource Monitoring
+## Resource Monitoring
 
 htop - Live resource monitoring
 

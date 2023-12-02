@@ -33,5 +33,3 @@ Tools
 Projects
 
 - 07 to 13
-
-

@@ -23,10 +23,11 @@ Sessions
     Windows (Tabs)
     Panes
 
-## Dot Files
+## Aliases
+
+To make an alias persistent you need to include it in shell startup files, like .bashrc or .zshrc
 
 ```zsh
-# Aliases
 satyam@satyam-2 src % alias ll="ls -lah"
 satyam@satyam-2 src % ll
 total 8
@@ -43,5 +44,3 @@ ll='ls -lah'
 
 We can store global config for shell in ~/.bashrc or ~/.zshrc depending on the shell.
 We can reference to our custom dotfiles using symlinks.
-
-## Remote Machines
