@@ -1,5 +1,7 @@
 # Hardware Description Language
 
+HDL is a functional/declarative language.
+
 Designing XOR gate
 
 Truth Table
@@ -26,7 +28,3 @@ CHIP Xor{
 }
 
 ```
-
-
-
-
