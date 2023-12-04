@@ -14,7 +14,9 @@ a b out
 ## HDL code
 
 ```hdl
-/*XOR gate : out = (a AND NOT(b)) OR (b AND NOT(a))*/
+/*
+xor.hdl
+XOR gate : out = (a AND NOT(b)) OR (b AND NOT(a))*/
 
 CHIP Xor{
     IN a,b;
@@ -28,3 +30,9 @@ CHIP Xor{
 }
 
 ```
+
+## Common HDLs
+
+VHDL
+Verilog
+Many more HDLs..
