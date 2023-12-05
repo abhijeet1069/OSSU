@@ -33,3 +33,8 @@ Tools
 Projects
 
 - 07 to 13
+
+## Introduction
+
+In a good modular design, you can work on thr individual modules independently, while completely
+ignoring rest of the system.
