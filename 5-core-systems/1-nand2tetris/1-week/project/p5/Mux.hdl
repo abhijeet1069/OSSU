@@ -1,0 +1,18 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux.hdl
+/** 
+ * Multiplexor: A better could be selector. However, first use was to mutltiplex signal in communication systems. So, name stuck on.
+ * out = ((sel == 0), a, b)
+ */
+CHIP Mux {
+    IN a, b, sel;
+    OUT out;
+
+    PARTS:
+    Not(in=sel, out=notSel);
+    And(a=a, b=notSel, out=op1);
+    And(a=b, b=sel, out=op2);
+    Or(a=op1, b=op2, out=out);
+}
