@@ -1,6 +1,12 @@
-# Experiences
+# Summary
 
-Hardware isnt really a requirement in India. Had I been born in
-China or Taiwan then it would be of prime importance.
+Introduction
+Combinational Circuits : ALU
+Sequential Circuits : Memory, Counters
+Machine Language - HACK
 
-But for me, the main requirement for taking this course is software.
+## Experiences
+
+Hardware isn't really a requirement in India. Here, we focus more on IT.
+
+The main requirement for taking this course is software.

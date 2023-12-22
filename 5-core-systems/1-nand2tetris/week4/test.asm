@@ -1,0 +1,13 @@
+@i
+M=1
+@sum
+M=0
+(LOOP)
+    @i
+    D=M
+    @100
+    D=D-A
+    @END
+(END)
+    @END
+    0;JMP
