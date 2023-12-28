@@ -58,3 +58,39 @@ M=D
 
 @R0
 D=M
+
+## Screen
+
+//sets first 16 pixels of row 2 to black
+@64
+D=A
+@SCREEN
+A=A+D
+M=-1
+
+SCREEN = 16384 (base address of screen memory map)
+Last screen memory map register = SCREEN+8191
+
+//turn screen to black
+@SCREEN
+D=A
+(LOOP)
+D=D+1
+A=D
+M=-1
+
+@LOOP
+0;JMP
+
+## Keyboard
+
+//jumps out of loop once ‘q’ is pressed
+(LOOP)
+@KBD
+D=M
+@81
+D=D-A
+@END
+D;JEQ
+@LOOP
+0;JMP

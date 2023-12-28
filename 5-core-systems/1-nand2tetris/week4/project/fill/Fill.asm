@@ -12,3 +12,5 @@
 // the screen should remain fully clear as long as no key is pressed.
 
 //// Replace this comment with your code.
+
+// Even the actual Fill.asm doesn't work correctly.
