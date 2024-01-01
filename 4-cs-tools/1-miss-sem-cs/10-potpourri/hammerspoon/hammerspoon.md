@@ -23,7 +23,7 @@ It overrides macOS binding. Its quite a powerful software.
 ```lua
 hs.hotkey.bind({"cmd","ctrl"}, "q", 
 function()
- hs.alert.show("Wow! Son of a bitch!!")
+ hs.alert.show("Hello,World!!")
 end
 )
 ```
