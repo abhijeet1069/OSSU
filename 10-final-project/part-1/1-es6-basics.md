@@ -190,6 +190,3 @@ export {name,age};
   console.log(name,age);
 </script>
 ```
-
-## React Render HTML
-
