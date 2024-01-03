@@ -14,6 +14,6 @@ If this principle is implemented, then new features can be added without changin
 Derived classes must be usable through the base class interface, without the need for the user to know
 the difference.
 
-## I
+## I:Interface Segregation Principle
 
-## D
+## D:Dependency Inversion Principle
