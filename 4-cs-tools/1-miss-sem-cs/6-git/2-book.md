@@ -39,3 +39,9 @@ git merge testing
 ```zsh
 git branch -d testing
 ```
+
+### Show branch
+
+```zsh
+git branch -a
+```
