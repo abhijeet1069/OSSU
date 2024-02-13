@@ -32,3 +32,9 @@ BOOLEAN
 
 DATE
     YYYY-MM-DD HH:MM:SS
+
+## Table as Sets in SQL
+
+SQL treats a table not as a set but rather as a multiset, so 
+duplicates can appear in a table.
+
