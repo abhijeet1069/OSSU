@@ -92,7 +92,7 @@ index fdff486..3b5198c 100644
 
 ## Git Branches
 
-Its the killer feature of GIT, and sets it apart from other VCS.
+A branch in Git is simply a lightweight movable pointer to one of the commits.
 
 ```zsh
 git add animal.py
