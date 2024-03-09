@@ -162,6 +162,7 @@ satyam@satyam-2 playground % git log --all --graph --decorate --oneline
 git status -s
 ```
 
+A - Added
 D - Deleted
 M - modified
 ?? - untracked
