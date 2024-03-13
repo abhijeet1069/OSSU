@@ -1,7 +1,0 @@
-digraph diagram1 {
-    node[shape=record];
-    a[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 09:00}"];
-    b[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 09:30}"];
-
-    a->b;
-}

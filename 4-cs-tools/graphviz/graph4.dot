@@ -1,0 +1,5 @@
+graph foo{
+    a -- b;
+    a -- c;
+    c -- b;
+}

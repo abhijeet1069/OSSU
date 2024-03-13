@@ -1,0 +1,30 @@
+digraph diagram1 {
+    color=green;
+    compound = true;
+    subgraph cluster0{
+    node[shape=record];
+    a[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 09:00}"];
+    b[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 09:30}"];
+    c[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 10:30}"];
+    d[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 11:00}"];
+    e[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 11:30}"];
+    f[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 12:00}"];
+    }
+
+    subgraph cluster1{
+    node[shape=record, style=filled];
+    g[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 09:00}"];
+    h[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 09:30}"];
+    i[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 10:30}"];
+    j[label="{Job ID : XXX | Schedule Task Name : xxx | Duration: 30 min| Start Time : 11:00}"];
+    }
+
+    a->b;
+    a->c;
+    c->d;
+    a->f;
+    e->c;
+    g->h;
+    h->i;
+    i->j;
+}
