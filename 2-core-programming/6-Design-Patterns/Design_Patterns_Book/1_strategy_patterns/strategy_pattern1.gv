@@ -1,0 +1,38 @@
+digraph Game{
+    node [fontname = "Bitstream Vera Sans", fontsize = 8, shape = "record"]
+    
+    rankdir="BT"
+
+    WeaponBehavior[label = "{interface\lWeaponBehavior\l| useWeapon();\l}"]
+    KnifeBehavior[label = "{KnifeBehavior\l| useWeapon();\l//implements cutting with a knife}"]
+    BowAndArrowBehavior[label = "{BowAndArrowBehavior\l| useWeapon();\l//implements shooting with a bow}"]
+    AxeBehavior[label = "{AxeBehavior\l| useWeapon();\l//implements chopping with an axe}"]
+    SwordBehavior[label = "{SwordBehavior\l| useWeapon();\l//implements swinging a sword}"]
+
+    Character[label = "{Character|<ref>WeaponBehavior weapon;\l| fight();\l}"]
+    Queen[label = "{Queen\l| fight();\l}"]
+    King[label = "{King\l| fight();\l}"]
+    Troll[label = "{Troll\l| fight();\l}"]
+    Knight[label = "{Knight\l| fight();\l}"]
+    
+
+    edge [fontname = "Bitstream Vera Sans",fontsize = 8,arrowhead=empty]
+    Queen->Character[label="extends"]
+    King->Character
+    Troll->Character
+    Knight->Character
+
+    edge[style=dotted]
+    KnifeBehavior->WeaponBehavior[label="implements"]
+    BowAndArrowBehavior->WeaponBehavior
+    AxeBehavior->WeaponBehavior
+    SwordBehavior->WeaponBehavior
+
+    edge[arrowhead=open,style=normal]
+    
+    Character:ref->WeaponBehavior[label="has-a"]
+
+    //setWeapon() will go into Character class
+
+   
+}

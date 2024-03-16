@@ -30,6 +30,4 @@ public abstract class Duck {
 	public void setQuackBehavior(QuackBehavior quackBehavior) {
 		this.quackBehavior = quackBehavior;
 	}
-	
-	
 }
