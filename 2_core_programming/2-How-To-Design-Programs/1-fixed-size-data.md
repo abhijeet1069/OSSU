@@ -119,3 +119,18 @@ substitution.
 ***Define one function per task.***
 
 ***DRY principle : Do not repeat***
+
+## Programs
+
+### File operations
+
+```shell
+(require 2htdp/batch-io)
+
+;(write-file "sample.dat" "Make hay while the sun shines")
+(read-file "sample.dat")
+
+>"Make hay while the sun shines"
+
+```
+
